@@ -21,7 +21,7 @@
 
 ---
 
-## 🛠️ 安装与使用
+## 安装与使用
 
 ### 1. 环境安装
 
@@ -30,3 +30,25 @@ conda create -n ts python=3.11
 conda activate ts
 
 pip install -r requirements.txt
+
+2. 团队分工
+
+成员A：基础量化模块（肺体积、肺气肿指数、肝脏脂肪浸润）
+成员B：中级量化 + 微调（胰腺萎缩率、腹部微调）
+成员C：创新量化 + 集成（气道锥度/弯曲度、结节参数、主流程、报告）
+
+3. 数据集
+
+TotalSegmentator Dataset：多器官分割测试
+AMOS：腹部器官（肝、胰腺）微调与验证
+ATM’22：气道树精细标注（气道参数）
+LIDC-IDRI：肺结节量化
+
+所有数据集均为公开数据集，已在报告中注明来源。
+
+4. 主要功能
+
+支持 Baseline（原始TS） 与 Proposed（微调 + 高级量化） 两种模式
+自动生成标准化PDF临床报告
+提供详细的 Baseline vs Proposed 对比实验
+跨数据集验证（鲁棒性测试）
