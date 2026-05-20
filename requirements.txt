@@ -1,0 +1,14 @@
+# 核心依赖
+torch
+torchvision
+torchaudio
+SimpleITK
+nibabel
+numpy
+matplotlib
+pandas
+scikit-image
+pyradiomics
+fpdf2
+tqdm
+pyyaml

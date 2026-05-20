@@ -1,0 +1,18 @@
+project:
+  name: "胸腹部CT多器官量化分析系统"
+  version: "0.1.0"
+
+paths:
+  data_root: "data"
+  ts_dataset: "data/TS_dataset"
+  amos: "data/AMOS"
+  atm22: "data/ATM22"
+  lidc: "data/LIDC-IDRI"
+  output: "output"
+  results: "results"
+  reports: "reports"
+
+segmentation:
+  model_mode: "original"   # 可选: original 或 finetuned
+  roi_subset: ["lung", "liver", "pancreas", "airway"]
+  fast: true
